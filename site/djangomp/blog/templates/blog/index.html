@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <style>
+    body{
+      background-color: #98FB98;
+    }
+  </style>
+
+    <title> The Secret to Kickstarters</title>
+  </head>
+  <body >
+      <div class="jumbotron" style="background-color: black">
+        <h1 class="display-4"><font color = "white">The Secret to Kickstarters</font></h1>
+        <p class="lead"><font color = "white">Ever wondered how you would know whether your Kickstarter project will succeed or fail?</font></p>
+        <hr class="my-4">
+        <p><font color = "white">Explore the page and find out more!</font></p>
+
+    </div>
+
+    <div data-spy="scroll" data-target="#display-4" data-offset="0">
+
+  <h6 id="kickstarter" size = "15" style="margin:5%;">What is Kickstarter?</h6>
+   <p style="margin:5%;">Kickstarter PBC is a funding platform for creative projects. Everything from films, games, and music to art, design, and technology. Kickstarter is full of ambitious, innovative, and imaginative ideas that are brought to life through the direct support of others.<br>Everything on Kickstarter must be a project with a clear goal, like making an album, a book, or a work of art. A project will eventually be completed, and something will be produced by it.(Source: Kickstarter FAQ)</p>
+
+  <h5 id = "factors" style="margin:5%;"><font size = "30"> Factors:</font></h5></br>
+
+  <h4 id="WORDING" style="margin:5%;">WORDING</h4>
+  <p style="margin:5%;">+Does the length of the project name bring in more or less backers?</p>
+
+  <h6 id="wordcount" size = "15" style="margin:5%;">Word Count</h6>
+  <img src = "{% static "bar_wc_backers.jpg" %}" alt = "A bar graph of the average number of backers per wordcount" style="margin:5%;">
+  <p style="margin:5%;" style = "text-align: justify;">Believe it or not but the number if words in your Kickstater project name could be a factor of how much backers you could get. The graph above represents the average number of backers per words count. It is safe to assume that 10 words have the highest average backers. Although 27 words seem to have the highest, but it only represents one project. Therefore, it's only an outlier and an isolated case</p>
+
+  <img src= "{% static "bar_wc_pledge.jpg" %}" style="margin:5%;">
+  <p style="margin:5%;" style = "text-align: justify;">The same conclusions could be consistenly made with USD pledges. USD pledges are the amount of money pledged but all of it is converted to dollars. 10 words also have the highest average backers. And number of words beyond that begins to descend at 12. Except for 27 words because it's an outlier.</p>
+
+   <h6 id="charcount" size = "15" style="margin:5%;">Character Count</h6>
+   <img src = "{% static "bar_cc_backers.jpg" %}" style="margin:5%;">
+  <p style="margin:5%;">Another thing to consider is character count. This could help determine visually what number of characters may seem to lengthy despite the small word count. The bar graph represents the average backers per character count. The average number of backers peaks at 60 characters which had an average of 143 backers. While there was a sharp drop when the count reaches to 61 which only had 30 backers. It would be advisable to keep the number of character below 60</p>
+
+  <img src = "{% static "bar_cc_pledge.jpg" %}" style="margin:5%;">
+  <p style="margin:5%;">There are similarities again when it comes to the support of the number of backers and pledge USD. The highest average USD pledges is 60. And it declines right after 60.In conclusion the best number of words for a Kickstarter project name is 10 but it would be best to keep it under 60 characters. If it were any longer than it could easily lose the attention of possible backers. In a study by Ziming Lui on "Reading Behavior in the Digital Environmnet: Changes in Reading Behavior Over the Past 10 Years", it was found that people had more of a habit in scanning, selective reading, keyword spotting and so on when it comes to electronic reading materials. It was noted that there was a decrease in attention.(Liu, 2005)</p>
+
+
+
+  <p style="margin:5%;">+Are there certain keywords in project names that can appeal to or drive away backers?</p>
+  <img src = "{% static "keywords_table.jpg" %}" style="margin:5%;">
+  <p style="margin:5%;">As mentioned earlier, some users would read based from keyword spotting so it would be important to know which keywords attract users the most. The table above shows the most used keywords sorted from the highest number of backers and USD pledges. The first 3 words can be disregarded because they are common words that represents nothing about the project. So when you look at the words below those 3 you could see that it's more related towards the arts. This could tell us what are the kind of projects people are more inclined. And possibly the kind of keywords they would use to search for it. So there could a higher chance of getting support from backers is if you do something related to art or film.</p>
+
+  <h4 id="TIME" style="margin:5%;">TIME</h4>
+
+  <p style="margin:5%;">+Is there a time of the year when Kickstarters are more likely to be funded?</p>
+
+  <h6 id="Month" size = "15" style="margin:5%;">Month</h6>
+  <img src = "{% static "month_backers.jpg" %}" style="margin:5%;">
+  <p style="margin:5%;">Time could also be a important criteria when planning to launch a project. Based from the dataset, May is a perfect time to launch a project. These projects, in average gets 118 backers. In addition, December is a terrible time to launch as project as these projects get an average of 72 backers. This may be due to the fact that it is a holiday season and people would mostly likely spening their money on presents instead.</p>
+
+  <h6 id="Week" size = "15" style="margin:5%;">Day of the Week</h6>
+  <img src = "{% static "day_of_week_backers.jpg" %}" style="margin:5%;">
+  <p style="margin:5%;">The graph above shows the number of backers on average based on the day of the week. It would be very advisable to launch your kickstarter project on Tuesday. It has the highest number of backers which is estimated around 158 backers. While it would be best to avoid launching a project on a Saturday because it has the lowest number of backers which is approximated to around 60 backers</p>
+
+
+  <h6 id="FundingPeriod" size = "15" style="margin:5%;">Funding Period</h6>
+  <img src = "{% static "period_backers.jpg" %}" style="margin:5%;">
+  <p style="margin:5%;">+Does the length of the project’s funding period affect how much funding they receive in that time?</p>
+    <p style="margin:5%;">Deadlines are known to be one of the best motivators. But like students if it's still far from now they won't even bother. And if it's the deadline of the kickstarter is too near then people wouldn't have enough time to decide or get the word out. Perhaps there is a perfect range which doesn't meet complies to what was mentioned above. The graph peaks at a period of 52 days of funding. In average, these projects received 32699.544504 USD pledges. And afterwards it continues to decline. While the lowest funding period which is just 1 day also receives the lowest number of USD pledges which is averaged around 1109.532411</p>
+
+  <h7 id = "conclusion" style="margin:5%;"><font size = "30"> Conclusion</font></h7>
+  <p style="margin:5%;">You can have more chances of gaining several backers if you limit your project name to 10 words within 60 characters. And also if your project name includes the keywords: "film", "art", "project", "short" and "new". It is also advisable to launch a project on May most specifically on a Tuesday. And to keep your funding period for only 52 days.<br>On the other hand, if you go beyond 12 words for your project name you're less likely to catch peole's attention. Most especially if you go beyond 60 characters. Furthermore, launching a project on December is a poor idea because there would be less backers willing to spend their money. And it becomes even more unlikely on a Saturday. In addition, a funding period of 1 day is too short to gain any traction.</p>
+
+  <p size = "11" style="margin:5%;">Sources</p>
+  <p size = "9" style="margin:5%;">
+Ziming Liu, (2005) "Reading behavior in the digital environment: Changes in reading behavior over the past ten years", Journal of Documentation, Vol. 61 Issue: 6, pp.700-712, https://doi.org/10.1108/00220410510632040</p>
+
+</div>
+
+ </body>
+</html>
